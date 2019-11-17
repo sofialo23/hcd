@@ -1,0 +1,72 @@
+
+* {box-sizing: border-box;}
+
+body {font-family: Verdana, sans-serif;}
+.mySlides{display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow Container */
+
+.slideshow-container{
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/*caption text*/
+.text{
+    color: #00802b;
+    font-size: 20px;
+    padding: 8px,12px;
+    position: absolute;
+    bottom: 8px;  /*moves all to the bottom of the page*/
+    width: 100%;
+    text-align: center;
+}
+
+/*number text*/
+.numberText{
+    color: #00802b;
+    font-size: 18px;
+    padding: 8px,12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot{
+    height: 20px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
