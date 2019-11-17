@@ -8,7 +8,15 @@
  </head>
 
 <body>
-	<h2>Qué hay de nuevo?</h2>
+	<ul id="menu"> 
+		<li class="menubutton"> <a class="active" href="galeria.php"> GALERIA</a></li>
+		<li class="menubutton"> <a href="historias.php">HISTORIAS</a></li>
+		<li class="menubutton"> <a href="historias.php">HCD RADIO</a></li>
+		<li class="menubutton"> <a href="historias.php">VIDEOS</a></li>
+		<li class="menubutton"> <a href="historias.php">CHAT EN LINEA</a></li>
+		<li class="menubutton"> <a href="historias.php">CONTACTOS</a></li>
+	</ul>
+	<h1>Qué hay de nuevo?</h1>
 
 	<div class="slideshow-container">
 
@@ -39,7 +47,7 @@
 
 	<br>
 
-	<div style="text-align:center">
+	<div class="bottombar">
 	  <span class="dot"></span> 
 	  <span class="dot"></span> 
 	  <span class="dot"></span> 

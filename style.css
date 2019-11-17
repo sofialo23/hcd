@@ -1,7 +1,42 @@
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #009999;
+}
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
+    margin: auto;
+
+}
+
+
+.menubutton{
+    float: left;  
+}
 
 * {box-sizing: border-box;}
 
-body {font-family: Verdana, sans-serif;}
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color:    #ffff80;
+}
 .mySlides{display: none;}
 img {vertical-align: middle;}
 
@@ -13,15 +48,28 @@ img {vertical-align: middle;}
     margin: auto;
 }
 
+.bottombar{
+    text-align:center;
+    margin-top: -15px;
+}
+
+h1{
+     text-align: center;
+
+}
+
 /*caption text*/
 .text{
     color: #00802b;
-    font-size: 20px;
+    font-size: 50px;
     padding: 8px,12px;
     position: absolute;
     bottom: 8px;  /*moves all to the bottom of the page*/
     width: 100%;
     text-align: center;
+    background-color: #000000;
+    opacity: 0.8;
+
 }
 
 /*number text*/
@@ -40,7 +88,7 @@ img {vertical-align: middle;}
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 50%;
+    border-radius: 80%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
@@ -69,4 +117,8 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+.buttons{
+     text-align:center;
 }
