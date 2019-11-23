@@ -1,31 +1,68 @@
-li a{
+ li a{
     display: block;
-    color: white;
+    color: #fecd06;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
 }
+ li a:hover {
+  background-color: #ffd839;
+  color: #232c2b;
 
-li a:hover {
-  background-color: #111;
 }
 
 .active {
   background-color: #009999;
 }
 
-#menu{
-    list-style-type: none;
-    margin: 0;
+.social-icons {
+  text-align: center;
 
-    overflow: hidden;
-    background-color: #333;
-    width:100%;
-    margin: auto;
-
+  }  
+.social-icons li {
+  list-style-type:none;
+  margin-left: -40px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a:hover{
+    background-color: #ffd11a;
+}
+.social-icons li a {
+  border-bottom: none;
+  color: black;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+ 
 }
 
 
+
+#radio{
+    width: 200px;
+    height: 150px;
+    padding: 0;
+}
+#menu{
+    list-style-type: none;
+    margin: 0;
+    height: 70px;
+    overflow: hidden;
+    /*background-image: linear-gradient(to left, #ffffa0, white);*/
+    background-color: #232c2b;
+    width:100%;
+    margin: auto;
+}
+
+#corner-image{
+    height: 100px;
+    width: 100px;
+    float: right;
+}
 .menubutton{
     float: left;  
 }
@@ -33,24 +70,64 @@ li a:hover {
 * {box-sizing: border-box;}
 
 body {
-    margin: 0;
-    font-family: Verdana, sans-serif;
-    background-color:    #ffff80;
+ margin:0;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    /*background-image: linear-gradient(to bottom right, #ffff66, white);
+*/
+background-image: url("images/yellowback.png");
+    margin-bottom: 25px;
 }
 .mySlides{display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow Container */
+.top-container{
+    width: 100%;
+    border: 1px solid black;
+
+}
+.top-container-left{
+    width: 65%;
+    border: 1px solid black;
+
+    float:left;
+}
+
+.top-container-right{
+    width: 30%;
+    border: 1px solid black;  
+    margin-right: 2%;  
+    float: right;
+    position: relative;
+}
+
+.big-container{
+    width: 100%;
+
+}
 
 .slideshow-container{
-    max-width: 800px;
+    width: 65%;
     position: relative;
     margin: auto;
+    margin-left: 2%;
+    display: inline-block;
+    margin-bottom: 5%;
+   /* border: 1px solid black;*/
+}
+
+.right-container{
+    width: 30%;
+    float: right;
+     margin-right: 2%;
+  /* border: 1px solid black;*/
 }
 
 .bottombar{
-    text-align:center;
-    margin-top: -15px;
+     width: 63%;
+     margin-left: 2%;
+     text-align: center;
+     margin-top: -70px;
 }
 
 h1{
@@ -58,12 +135,16 @@ h1{
 
 }
 
+.photos{
+  width: 100%;
+  height: 650px;
+}
 /*caption text*/
 .text{
     color: #00802b;
     font-size: 50px;
     padding: 8px,12px;
-    position: absolute;
+    position: relative;
     bottom: 8px;  /*moves all to the bottom of the page*/
     width: 100%;
     text-align: center;
@@ -72,14 +153,6 @@ h1{
 
 }
 
-/*number text*/
-.numberText{
-    color: #00802b;
-    font-size: 18px;
-    padding: 8px,12px;
-    position: absolute;
-    top: 0;
-}
 
 /* The dots/bullets/indicators */
 
@@ -91,6 +164,7 @@ h1{
     border-radius: 80%;
     display: inline-block;
     transition: background-color 0.6s ease;
+
 }
 
 .active {
@@ -105,12 +179,12 @@ h1{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
 
@@ -122,3 +196,5 @@ h1{
 .buttons{
      text-align:center;
 }
+
+
